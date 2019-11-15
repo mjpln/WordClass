@@ -1,0 +1,29 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "designerId": "f3a250b8-5d34-4794-9ebe-b619ac6c152a",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#tfwordclass",
+                "designer|targetType": "Ext.form.field.Text",
+                "scope": "me"
+            },
+            "name": "ControllerAction",
+            "designerId": "8e4225b0-f2ae-4755-8988-58bd326a48c4"
+        }
+    ]
+}

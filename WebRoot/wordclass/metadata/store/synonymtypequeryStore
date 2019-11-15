@@ -1,0 +1,31 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "synonymtypequeryStore",
+        "model": "comboboxModel",
+        "storeId": "StoreWordpatType"
+    },
+    "designerId": "e7066ecd-a8ff-48dd-9c6f-cf0cb629db51",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Memory",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "data": [
+                    "[{id:0,text:'所有'},{id:1,text:'全称'},{id:2,text:'简称'},{id:3,text:'代码'},{id:4,text:'错词'},{id:5,text:'其他别名'}]"
+                ]
+            },
+            "name": "MyMemoryProxy2",
+            "designerId": "d9467a9f-4bad-428b-bc3a-1f502d412b5e"
+        }
+    ]
+}

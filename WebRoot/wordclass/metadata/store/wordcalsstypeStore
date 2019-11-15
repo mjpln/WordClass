@@ -1,0 +1,31 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "wordcalsstypeStore",
+        "model": "comboboxModel",
+        "storeId": "wordcalsstypeStore"
+    },
+    "designerId": "d27d6bb3-43e5-4df6-8d06-afe0832c2258",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Memory",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "data": [
+                    "[{id:0,text:'当前商家'},{id:1,text:'当前行业'},{id:2,text:'通用行业'}]"
+                ]
+            },
+            "name": "MyMemoryProxy3",
+            "designerId": "bbc679a7-36c4-4cfb-abbe-914789755c93"
+        }
+    ]
+}

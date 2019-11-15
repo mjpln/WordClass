@@ -1,0 +1,42 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "comboboxModel"
+    },
+    "designerId": "537b58f6-f438-4dca-9c30-f31b3b036b56",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "string"
+            },
+            "name": "MyField21",
+            "designerId": "ef46b2f6-0420-44ee-8c93-d758f1c72ca4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text",
+                "type": "string"
+            },
+            "name": "MyField22",
+            "designerId": "cd045217-ca67-449f-b0c2-1483b92bc5b1"
+        }
+    ]
+}

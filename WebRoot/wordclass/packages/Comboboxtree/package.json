@@ -1,0 +1,26 @@
+{
+    "name": "Comboboxtree",
+    "type": "code",
+    "creator": "anonymous",
+    "summary": "Short summary",
+    "detailedDescription": "Long description of package",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "local": true,
+    "requires": [],
+	"architect":{
+		"compatFrameworks":[
+			"ext40"
+		],
+		"classes":[{
+			"definition":"Comboboxtree.Definition.js",
+			"className":"Ext.ux.Comboboxtree",
+			"js":[
+				"Comboboxtree.js"
+			],
+			"css":[
+			]
+		}]
+	}
+}

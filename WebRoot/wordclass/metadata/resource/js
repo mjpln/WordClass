@@ -1,0 +1,15 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js",
+        "id": "Wordclass",
+        "url": "./Wordclass.js",
+        "x-compile": true
+    },
+    "designerId": "7d57a49a-d919-4ba5-89a1-c3e9f8d86cee"
+}

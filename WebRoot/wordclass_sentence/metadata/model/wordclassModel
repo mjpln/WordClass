@@ -1,0 +1,84 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "wordclassModel"
+    },
+    "designerId": "50fdc95b-6664-49f0-9e64-6f6210d24e55",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "string"
+            },
+            "name": "MyField",
+            "designerId": "87cc8b63-c4c0-4e3e-8b6f-7eb2fde64ec4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "wordclass",
+                "type": "string"
+            },
+            "name": "MyField1",
+            "designerId": "250f5c3f-ca87-4ec0-8579-f981aa118570"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "wordclassid",
+                "type": "string"
+            },
+            "name": "MyField2",
+            "designerId": "73df4c3e-b717-4569-baf9-02302147ef8b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "wordclasstype",
+                "type": "string"
+            },
+            "name": "MyField3",
+            "designerId": "61e22385-8b38-444a-8808-42c71167de4d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "isHaveItem",
+                "type": "string"
+            },
+            "name": "MyField4",
+            "designerId": "9e9687c2-b668-4035-a375-1505d57bfc7d"
+        }
+    ]
+}

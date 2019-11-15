@@ -1,0 +1,73 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "wordclassStore",
+        "model": "wordclassModel",
+        "pageSize": 10,
+        "storeId": "wordclassStore"
+    },
+    "designerId": "eccea3fd-3ccf-437d-97b1-e61ed6c68787",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "timeout": 300000,
+                "url": "../wordclass.action"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "aad37bd9-800c-4852-a2b4-65826403f4db",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "a1097a2f-84f5-45b5-ad2d-f7a7be5879e2"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "var wordclass = Ext.getCmp(\"tfwordclass\").getValue().replace(new RegExp(' ','g'),'');\r",
+                    "var wordclassprecise = Ext.getCmp(\"ckwordclassprecise\").getValue();\r",
+                    "var cbwordclasstypeselect = Ext.getCmp(\"cbwordclasstypeselect\").getValue();\r",
+                    "if(cbwordclasstypeselect==null||cbwordclasstypeselect==\"\"){\r",
+                    "cbwordclasstypeselect=\"全部\";\r",
+                    "}\r",
+                    "//alert(cbwordclasstypeselect);\r",
+                    "Ext.getCmp('worditemgridpanel').store.removeAll();//清空词条列表\r",
+                    "this.proxy.actionMethods = \"post\";\r",
+                    "this.proxy.extraParams = { action: 'select', wordclass:wordclass,wordclassprecise:wordclassprecise,wordclasstype:cbwordclasstypeselect};"
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "b525e0c0-ab2c-40fc-b82e-f112970e11db"
+        }
+    ]
+}

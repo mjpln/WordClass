@@ -1,0 +1,48 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "synonymModel",
+            "comboboxModel",
+            "wordclassModel",
+            "worditemModel"
+        ],
+        "name": "MyApp",
+        "stores": [
+            "worditemtypequeryStore",
+            "synonymtypequeryStore",
+            "synonymtypeStore",
+            "worditemtypeStore",
+            "wordclassStore",
+            "worditemStore",
+            "synonymStore",
+            "wordclasstypeStore",
+            "wordclasstypequeryStore"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.Ajax.timeout=120000;"
+                ]
+            },
+            "name": "launch",
+            "designerId": "7a17b24d-a012-4d2c-8d63-1f156a3bab5f"
+        }
+    ]
+}

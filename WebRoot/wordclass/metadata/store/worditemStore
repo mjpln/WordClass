@@ -1,0 +1,77 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "worditemStore",
+        "model": "worditemModel",
+        "pageSize": 10,
+        "storeId": "worditemStore"
+    },
+    "designerId": "4695bca3-7fe0-4cdb-b983-aeca319d3f82",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "../worditem.action"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "58819af8-025b-4d4c-aaf4-f0f9ba007559",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "c2c2773b-cf5d-4499-9794-3ecf0ed80130"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "var worditem = Ext.getCmp(\"tfworditem\").getValue().replace(new RegExp(' ','g'),'%');\r",
+                    "var worditemprecise = Ext.getCmp(\"ckworditemprecise\").getValue();\r",
+                    "var iscurrentwordclass = Ext.getCmp(\"ckcwordclass\").getValue();\r",
+                    "var worditemtype = Ext.getCmp(\"cbworditemtype\").getValue();\r",
+                    "var citycode = Ext.getCmp(\"selectcity\").submitValue;\r",
+                    "this.proxy.actionMethods = \"post\";\r",
+                    "this.proxy.extraParams = {\r",
+                    "    action: 'select',\r",
+                    "    worditem: worditem,\r",
+                    "    worditemprecise: worditemprecise,\r",
+                    "    iscurrentwordclass: iscurrentwordclass,\r",
+                    "    worditemtype: worditemtype,\r",
+                    "    curwordclass: curwordclass,\r",
+                    "    citycode: citycode\r",
+                    "};"
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "25e0e909-06a0-47df-a756-220586fc52d1"
+        }
+    ]
+}
